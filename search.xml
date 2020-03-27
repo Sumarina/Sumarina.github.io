@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>深入了解webpack配置（一）</title>
+      <link href="/2020/03/27/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3webpack%E9%85%8D%E7%BD%AE%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+      <url>/2020/03/27/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3webpack%E9%85%8D%E7%BD%AE%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h2 id="webpack-是什么"><a href="#webpack-是什么" class="headerlink" title="webpack 是什么"></a>webpack 是什么</h2><p>webpack 是一个静态资源构建工具，主要是把我们的应用程序所需要的模块构建成一个或者多个 bundles。在构建过程中，webpack 会递归循环创建依赖关系图。</p><h2 id="webpack-的核心概念"><a href="#webpack-的核心概念" class="headerlink" title="webpack 的核心概念"></a>webpack 的核心概念</h2><ol><li>entry（入口）：指示 webpack 构建的入口文件，也就是构建依赖关系图的开始。（默认值为<code>./src</code>）</li><li>output（输出）：输出构建之后的 bundles（可以修改输出的文件名，默认值为<code>./dist</code>）</li><li>loader:将 webpack 不能识别的模块转为能够识别的有效模块</li><li>plugins(插件)：在 webpack 整个构建过程中注入扩展逻辑来改变构建结果或做你想要做的事情</li></ol><h2 id="demo-配置"><a href="#demo-配置" class="headerlink" title="demo 配置"></a>demo 配置</h2><p><code>使用 webpack 必须安装 webpack 和 webpack-cli（webpack 使用的是 4.x 的版本）</code><br>在官网很明确的指出 webpack v4.0.0 后的版本是开箱即用。但仍还是高度可配置的。<br>在 src 文件新建一个 index.js 文件【webpack 默认入口，如若放其他目录，需修改配置文件中 entry 的值】。index 文件的内容如下：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const newArr = [</span><br><span class="line">  ...[1, 2, 3].map(value =&gt; &#123;</span><br><span class="line">    <span class="built_in">return</span> value * 2;</span><br><span class="line">  &#125;)</span><br><span class="line">];</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 程序员 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> webpack </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>20191030随笔</title>
       <link href="/2019/10/30/20191030%E9%9A%8F%E7%AC%94/"/>
       <url>/2019/10/30/20191030%E9%9A%8F%E7%AC%94/</url>
@@ -366,9 +389,9 @@
       
         <tags>
             
-            <tag> 村上春树 </tag>
-            
             <tag> 科幻 </tag>
+            
+            <tag> 村上春树 </tag>
             
         </tags>
       
@@ -462,9 +485,32 @@
       
         <tags>
             
+            <tag> 乔治奥威尔 </tag>
+            
             <tag> 科幻 </tag>
             
-            <tag> 乔治奥威尔 </tag>
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>夏天·烟火·我的尸体</title>
+      <link href="/2018/09/12/%E5%A4%8F%E5%A4%A9%C2%B7%E7%83%9F%E7%81%AB%C2%B7%E6%88%91%E7%9A%84%E5%B0%B8%E4%BD%93/"/>
+      <url>/2018/09/12/%E5%A4%8F%E5%A4%A9%C2%B7%E7%83%9F%E7%81%AB%C2%B7%E6%88%91%E7%9A%84%E5%B0%B8%E4%BD%93/</url>
+      
+        <content type="html"><![CDATA[<p>洪啸老早就推荐我看这本书。最近才有时间看。看完之后突然想到曾经看到的一句话“恶之天真，天真之恶”。小孩子真的是很纯真的么？我不信。他们肯定也有邪恶的一面。只是他们不知道他们的这个行为会造成多么严重的后果。</p><p>书中的弥生在伸手推五月的时候，她应该没想过五月会这么被摔死。所以她害怕了。她不知所措。幸好她还有阿健，她的哥哥，她最喜欢的哥哥。所以她不容许别人也喜欢她的哥哥，就是因为五月偷偷告诉她喜欢阿健，她心里嫉妒，所以对五月伸出了魔掌，让五月从树上摔下去。</p><p>阿健和弥生一起藏五月的尸体，阿健说“别怕，有我在”。我想弥生会不会有那么一点庆幸？所以她和阿健才会能这么亲密。从头到尾，我都在怀疑，是不是我理解错了？弥生她不是读小学三年级，应该是读初中三年级或者更大。而阿健他不是小学六年级。可是作者明明白白的写着当暑假结束，弥生重新回到小学，她该上三年级了。</p><p>想起小时候的自己也干过一堆坏事。和隔壁小朋友一起玩跷跷板，故意让他捡一块砖头放在跷跷板那头，我在他放砖头到跷跷板那头时趁机踩下了跷跷板这头，我明知道我这一脚才下去，砖头会迎面拍在他脸上，但我还是踩了，我只想知道会把他拍成什么样，他哭了，鼻子一直在流血，而我却在哈哈大笑，后面的记不清了，只知道他再也没和我一起玩了。</p><p>现在回想起来，也没法理解当时为什么要这么做，只是觉得好玩吧，也不会觉得会把他拍成什么样，更加没想过“死”这个字眼，当然，很庆幸没有和这个字相关。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 书迹 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 黑乙一 </tag>
             
         </tags>
       
@@ -490,29 +536,6 @@
             <tag> javascript </tag>
             
             <tag> 原型 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>夏天·烟火·我的尸体</title>
-      <link href="/2018/09/12/%E5%A4%8F%E5%A4%A9%C2%B7%E7%83%9F%E7%81%AB%C2%B7%E6%88%91%E7%9A%84%E5%B0%B8%E4%BD%93/"/>
-      <url>/2018/09/12/%E5%A4%8F%E5%A4%A9%C2%B7%E7%83%9F%E7%81%AB%C2%B7%E6%88%91%E7%9A%84%E5%B0%B8%E4%BD%93/</url>
-      
-        <content type="html"><![CDATA[<p>洪啸老早就推荐我看这本书。最近才有时间看。看完之后突然想到曾经看到的一句话“恶之天真，天真之恶”。小孩子真的是很纯真的么？我不信。他们肯定也有邪恶的一面。只是他们不知道他们的这个行为会造成多么严重的后果。</p><p>书中的弥生在伸手推五月的时候，她应该没想过五月会这么被摔死。所以她害怕了。她不知所措。幸好她还有阿健，她的哥哥，她最喜欢的哥哥。所以她不容许别人也喜欢她的哥哥，就是因为五月偷偷告诉她喜欢阿健，她心里嫉妒，所以对五月伸出了魔掌，让五月从树上摔下去。</p><p>阿健和弥生一起藏五月的尸体，阿健说“别怕，有我在”。我想弥生会不会有那么一点庆幸？所以她和阿健才会能这么亲密。从头到尾，我都在怀疑，是不是我理解错了？弥生她不是读小学三年级，应该是读初中三年级或者更大。而阿健他不是小学六年级。可是作者明明白白的写着当暑假结束，弥生重新回到小学，她该上三年级了。</p><p>想起小时候的自己也干过一堆坏事。和隔壁小朋友一起玩跷跷板，故意让他捡一块砖头放在跷跷板那头，我在他放砖头到跷跷板那头时趁机踩下了跷跷板这头，我明知道我这一脚才下去，砖头会迎面拍在他脸上，但我还是踩了，我只想知道会把他拍成什么样，他哭了，鼻子一直在流血，而我却在哈哈大笑，后面的记不清了，只知道他再也没和我一起玩了。</p><p>现在回想起来，也没法理解当时为什么要这么做，只是觉得好玩吧，也不会觉得会把他拍成什么样，更加没想过“死”这个字眼，当然，很庆幸没有和这个字相关。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 书迹 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 黑乙一 </tag>
             
         </tags>
       
